@@ -1,0 +1,10 @@
+ncbi_taxonomy/
+wiki_pgs/
+
+notes.txt
+*.sbatch
+__pycache__/
+*.pdf
+*.zip
+*.csv
+*.json
