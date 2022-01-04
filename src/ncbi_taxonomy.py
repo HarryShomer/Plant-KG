@@ -23,6 +23,9 @@ def retrieve_tax_gz():
     file = os.path.join(ncbi_data_dir, "ncbi_taxdump.tar.gz")
     url = "https://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz"
 
+    if not os.path.isdir(utils.DATA_DIR):
+        os.mkdir(utils.DATA_DIR)
+
     if not os.path.isdir(ncbi_data_dir):
         os.mkdir(ncbi_data_dir)
 
